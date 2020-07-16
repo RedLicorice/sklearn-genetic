@@ -34,5 +34,5 @@ setup(
     ],
     packages=find_packages(),
     python_requires='>=2.7',
-    install_requires=['scikit-learn>=0.18', 'deap>=1.0.2'],
+    install_requires=['scikit-learn>=0.18', 'deap>=1.0.2', 'joblib'],
 )
