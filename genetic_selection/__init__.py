@@ -272,7 +272,7 @@ class GeneticSelectionCV(BaseEstimator, MetaEstimatorMixin, SelectorMixin):
     def _fit(self, X, y):
         X, y = check_X_y(X, y, "csr")
         # Initialization
-        cv = check_cv(self.cv, y, is_classifier(self.estimator))
+        cv = check_cv(self.cv, y, classifier=is_classifier(self.estimator))
         scorer = check_scoring(self.estimator, scoring=self.scoring)
         n_features = X.shape[1]
 
